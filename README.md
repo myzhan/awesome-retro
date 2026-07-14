@@ -370,6 +370,7 @@
 ### 动作 / 平台 Action & Platformer
 
 - [OpenLara](https://github.com/XProger/OpenLara) — 古墓丽影（Tomb Raider）经典引擎重实现。
+- [Metaforce](https://github.com/AxioDL/metaforce) — 银河战士 Prime（Metroid Prime）引擎的原生重实现。
 - [Shipwright](https://github.com/HarbourMasters/Shipwright) — 塞尔达传说：时之笛（Ocarina of Time）PC 移植。
 - [2 Ship 2 Harkinian](https://github.com/HarbourMasters/2ship2harkinian) — 塞尔达传说：姆吉拉的假面 PC 移植。
 - [Dusklight](https://github.com/TwilitRealm/dusklight) — 塞尔达传说：黄昏公主逆向重实现（PC / 移动端）。
