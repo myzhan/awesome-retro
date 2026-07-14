@@ -186,7 +186,9 @@
 - [Beetle WonderSwan](https://github.com/libretro/beetle-wswan-libretro) — 万代 WonderSwan / Color 模拟器核心。
 - [Beetle NeoPop](https://github.com/libretro/beetle-ngp-libretro) — Neo Geo Pocket / Color 模拟器核心。
 - [PokeMini](https://github.com/libretro/PokeMini) — 宝可梦迷你（Pokémon mini）模拟器。
-- 此外 [Mednafen](https://mednafen.github.io/) 亦覆盖 Virtual Boy、PC Engine、WonderSwan、Neo Geo Pocket 等（见「多系统 / 通用」）。
+- [Beetle PCE](https://github.com/libretro/beetle-pce-libretro) — PC Engine / TurboGrafx-16 / PC-FX 模拟器核心（Mednafen 衍生）。
+- [Beetle PCE FAST](https://github.com/libretro/beetle-pce-fast-libretro) — PC Engine / TurboGrafx-16 高性能模拟器核心。
+- 此外 [Mednafen](https://mednafen.github.io/) 亦覆盖 Virtual Boy 等（见「多系统 / 通用」）；PC Engine 的 FPGA 实现见「FPGA 硬件模拟」。
 
 ### 街机 Arcade
 
@@ -217,6 +219,12 @@
 - [NP2kai](https://github.com/AZO234/NP2kai) — NEC PC-98 模拟器（Neko Project II 分支）。
 - [px68k](https://github.com/libretro/px68k-libretro) — 夏普 Sharp X68000 模拟器核心。
 - [Tsugaru](https://github.com/captainys/TOWNSEMU) — 富士通 FM Towns 模拟器。
+- [quasi88](https://github.com/libretro/quasi88-libretro) — NEC PC-8801 模拟器核心。
+- [b-em](https://github.com/stardot/b-em) — Acorn BBC Micro 模拟器。
+- [SimCoupe](https://github.com/simonowen/simcoupe) — SAM Coupé 模拟器。
+- [Oricutron](https://github.com/pete-gordon/oricutron) — Oric 系列模拟器。
+- [Arculator](https://github.com/sarah-walker-pcem/arculator) — Acorn Archimedes 模拟器。
+- [ep128emu](https://github.com/istvan-v/ep128emu) — Enterprise 128 模拟器。
 
 ## FPGA 硬件模拟 FPGA Emulation & Cores
 
@@ -379,6 +387,7 @@
 ### 开放世界 Open World
 
 - [OpenRW](https://github.com/rwengine/openrw) — 侠盗猎车手 3（GTA III）开源重实现。
+- [reVC](https://github.com/mrxenginner/reVC) — 侠盗猎车手：罪恶都市（GTA Vice City）逆向重实现。
 
 ### 太空 / 探索 Space & Exploration
 
@@ -434,6 +443,8 @@
 - [s1disasm](https://github.com/sonicretro/s1disasm) — 索尼克 1（Sonic the Hedgehog）反汇编工程。
 - [s2disasm](https://github.com/sonicretro/s2disasm) — 索尼克 2（Sonic the Hedgehog 2）反汇编工程。
 - [Perfect Dark](https://github.com/n64decomp/perfect_dark) — 完美黑暗反编译工程。
+- [Metroid Prime (prime)](https://github.com/PrimeDecomp/prime) — 银河战士 Prime 反编译工程。
+- [Super Metroid (sm)](https://github.com/snesrev/sm) — 超级银河战士逆向重实现（C 语言）。
 
 ## 幻想主机 Fantasy Consoles
 
