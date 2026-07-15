@@ -577,6 +577,7 @@ ROM 管理、补丁、成就与联机等实用工具。
 - [VKD3D-Proton](https://github.com/HansKristian-Work/vkd3d-proton) — Direct3D 12 转 Vulkan。
 - [MoltenVK](https://github.com/KhronosGroup/MoltenVK) — Vulkan 转 Apple Metal。
 - [gl4es](https://github.com/ptitSeb/gl4es) — OpenGL 转 OpenGL ES。
+- [vitaGL](https://github.com/Rinnegatamante/vitaGL) — 在 PS Vita 上实现 OpenGL（转为 GXM 图形 API），常用于移植游戏。
 - [vkd3d](https://gitlab.winehq.org/wine/vkd3d) — Direct3D 12 转 Vulkan（WineHQ 官方）。
 - [SoftGPU](https://github.com/JHRobotics/softgpu) — 为虚拟机中的 Windows 9x 提供 3D 加速 GPU 驱动（Direct3D/OpenGL/Glide）。
 - [vmdisp9x](https://github.com/JHRobotics/vmdisp9x) — 虚拟机中的 Windows 9x 显示驱动（SoftGPU 的底层组件）。
