@@ -11,7 +11,7 @@
 
 ## 目录
 
-- [模拟器 Emulators](#模拟器-emulators)（按厂商 → 机型二级分类）
+- [模拟器 Emulators](#模拟器-emulators)（按厂商 / 平台二级分类）
   - [多系统 / 通用 Multi-System](#多系统--通用-multi-system)
   - [任天堂 Nintendo](#任天堂-nintendo)
   - [索尼 Sony](#索尼-sony)
@@ -20,7 +20,10 @@
   - [其他与冷门主机 Other & Niche Consoles](#其他与冷门主机-other--niche-consoles)
   - [街机 Arcade](#街机-arcade)
   - [复古计算机 Retro Computers](#复古计算机-retro-computers)
-- [FPGA 硬件模拟 FPGA Emulation & Cores](#fpga-硬件模拟-fpga-emulation--cores)
+  - [掌机与主机模拟器 Handheld & Console Emulators](#掌机与主机模拟器-handheld--console-emulators)
+- [硬件实现 Hardware Implementations](#硬件实现-hardware-implementations)
+  - [FPGA 硬件模拟 FPGA Emulation & Cores](#fpga-硬件模拟-fpga-emulation--cores)
+  - [单片机与嵌入式模拟器 Microcontroller & Embedded Emulators](#单片机与嵌入式模拟器-microcontroller--embedded-emulators)
 - [前端 Frontends](#前端-frontends)
 - [老游戏开源复刻 Game Remakes & Reimplementations](#老游戏开源复刻-game-remakes--reimplementations)（按玩法类型二级分类）
   - [即时战略 RTS](#即时战略-rts)
@@ -44,6 +47,10 @@
 - [兼容层与转译 Compatibility & Translation Layers](#兼容层与转译-compatibility--translation-layers)
 - [CRT 着色器与滤镜 Shaders & Filters](#crt-着色器与滤镜-shaders--filters)
 - [开源复古硬件 Retro Hardware & DIY](#开源复古硬件-retro-hardware--diy)
+  - [音源与视频 Sound & Video](#音源与视频-sound--video)
+  - [卡带工具 Cartridge Tools](#卡带工具-cartridge-tools)
+  - [卡带 / 存储卡模拟 Cartridge & Memory Card Emulation](#卡带--存储卡模拟-cartridge--memory-card-emulation)
+  - [手柄适配器与固件 Controller Adapters & Firmware](#手柄适配器与固件-controller-adapters--firmware)
 - [相关列表与资源 Related Lists & Resources](#相关列表与资源-related-lists--resources)
 
 ## 模拟器 Emulators
@@ -203,6 +210,7 @@
 - [DOSBox Staging](https://github.com/dosbox-staging/dosbox-staging) — 现代化的 DOSBox 分支。
 - [ScummVM](https://github.com/scummvm/scummvm) — 经典冒险游戏引擎重实现（同时可运行大量老游戏）。
 - [VICE](https://sourceforge.net/projects/vice-emu/) — Commodore（C64 等）模拟器。
+- [VirtualC64](https://github.com/dirkwhoffmann/virtualc64) — 专注 Commodore 64 的模拟器（macOS）。
 - [FS-UAE](https://github.com/FrodeSolheim/fs-uae) — Amiga 模拟器。
 - [WinUAE](https://github.com/tonioni/WinUAE) — Amiga 模拟器。
 - [Hatari](https://github.com/hatari/hatari) — Atari ST/STE/TT/Falcon 模拟器。
@@ -226,18 +234,68 @@
 - [Arculator](https://github.com/sarah-walker-pcem/arculator) — Acorn Archimedes 模拟器。
 - [ep128emu](https://github.com/istvan-v/ep128emu) — Enterprise 128 模拟器。
 
-## FPGA 硬件模拟 FPGA Emulation & Cores
+### 掌机与主机模拟器 Handheld & Console Emulators
+
+运行在游戏掌机/主机（Wii/3DS/PSP/PS Vita/Switch 等）上的开源模拟器与向下兼容方案。
+
+#### Wii / GameCube
+
+- [FCE Ultra GX](https://github.com/dborth/fceugx) — 面向 Wii/GameCube 的 NES 模拟器移植。
+- [FCEUX TX](https://github.com/saulfabregwiivc/FCEUXTX) — FCE Ultra GX 的增强分支，更多功能与修正。
+- [Snes9x GX](https://github.com/dborth/snes9xgx) — 面向 Wii/GameCube 的 SNES 模拟器移植。
+- [Visual Boy Advance GX](https://github.com/dborth/vbagx) — 面向 Wii/GameCube 的 GBA/GB/GBC 模拟器移植。
+- [Genesis Plus GX](https://github.com/ekeeke/genesis-plus-gx) — 世嘉 8/16 位模拟器增强移植（Wii/GameCube 起源，支持 MD/CD/SMS/GG）。
+
+#### Wii U
+
+- [Nintendont](https://github.com/FIX94/Nintendont) — 在 Wii / Wii U (vWii) 上运行 GameCube 游戏的 homebrew 项目。
+
+#### DS / 3DS
+
+- [GameYob](https://github.com/Stewmath/GameYob) — GB/GBC/SGB 模拟器（DS/3DS 等掌机）。
+- [TWiLight Menu++](https://github.com/DS-Homebrew/TWiLightMenu) — DSi/3DS/DS 烧录卡的开源 DSi 菜单替代，可启动多种系统游戏。
+
+#### PSP
+
+- [DaedalusX64](https://github.com/DaedalusX64/daedalus) — N64 模拟器（PSP/3DS/PS Vita/PC 等）。
+- [Snes9xTYL](https://github.com/esmjanus/snes9xTYL) — PSP 上的 SNES 模拟器。
+- [FrogGBA](https://github.com/tzubertowski/FrogGBA) — 基于 TempGBA 的现代化 PSP GBA 模拟器，优化性能。
+- [TempGBA](https://github.com/PSP-Archive/TempGBA) — PSP 上的 GBA 模拟器（基于 gpSP）。
+- [gpSP Kai](https://github.com/uberushaximus/gpsp-kai) — PSP 上的 GBA 模拟器 gpSP 改（Kai）。
+- [MasterBoy](https://github.com/PSP-Archive/MasterBoy) — PSP 上的 GB/GBC/SMS/GG 多合一模拟器。
+
+#### PS Vita
+
+- [Adrenaline](https://github.com/TheOfficialFloW/Adrenaline) — 在 PS Vita 上运行 PSP 自制固件的兼容环境。
+- [Snes9xVITA](https://github.com/frangarcj/Snes9xVITA) — PS Vita 原生 SNES 模拟器。
+- [DaedalusX64 VitaGL](https://github.com/frangarcj/daedalusx64-vitagl) — DaedalusX64 N64 模拟器的 PS Vita (VitaGL) 移植。
+- [Emu4VitaPlus](https://github.com/noword/Emu4VitaPlus) — 基于 Libretro API 的 PS Vita 模拟器前端，支持多种核心。
+
+#### Nintendo Switch
+
+- [pEMU](https://github.com/Cpasjuste/pemu) — 面向 Switch/PS Vita/PC 的多系统模拟器合集（pSNES / pNES / pFBN 等）。
+- [melonDS Switch](https://github.com/RSDuck/melonDS) — 独立 DS 模拟器的 Switch 移植。
+
+#### 跨平台 Cross-Platform
+
+- [Fake-08](https://github.com/jtothebell/fake-08) — PICO-8 播放器/模拟器（3DS/Switch/PS Vita/Wii U 等掌机平台）。
+
+## 硬件实现 Hardware Implementations
+
+在专用硬件平台（FPGA / 单片机 / 嵌入式 SoC）上实现复古游戏模拟。
+
+### FPGA 硬件模拟 FPGA Emulation & Cores
 
 用 FPGA 在硬件层面重建复古主机/街机的逻辑电路，追求低延迟与高还原度。
 
-### 平台与核心集 Platforms & Core Collections
+#### 平台与核心集 Platforms & Core Collections
 
 - [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer) — 基于 DE10-Nano 的开源 FPGA 复古平台（主程序框架）。
 - [MiST](https://github.com/mist-devel/mist-board) — MiSTer 的前身，FPGA 复古主机/街机平台。
 - [JT cores](https://github.com/jotego/jtcores) — Jotego 的开源街机 FPGA 核心集合。
 - [Analogue Pocket openFPGA Cores](https://github.com/openfpga-cores-inventory/analogue-pocket) — Analogue Pocket 的开源 openFPGA 核心索引。
 
-### MiSTer 单个核心 MiSTer Cores
+#### MiSTer 单个核心 MiSTer Cores
 
 各主机/掌机的具体 FPGA（HDL）实现，仓库遵循 `<系统>_MiSTer` 命名。以下为示例，完整列表见 [MiSTer-devel](https://github.com/MiSTer-devel)。
 
@@ -253,9 +311,46 @@
 - [Saturn_MiSTer](https://github.com/MiSTer-devel/Saturn_MiSTer) — 世嘉 Saturn 的 FPGA 核心。
 - [PSX_MiSTer](https://github.com/MiSTer-devel/PSX_MiSTer) — PlayStation 的 FPGA 核心。
 
-### 独立 FPGA 实现 Independent Implementations
+#### 独立 FPGA 实现 Independent Implementations
 
 - [fpganes](https://github.com/strigeus/fpganes) — 独立的 NES FPGA 实现（众多 NES 核心的源头）。
+
+### 单片机与嵌入式模拟器 Microcontroller & Embedded Emulators
+
+运行在 ESP32、RP2040/RP2350 等单片机/嵌入式平台上的开源模拟器。
+
+#### ESP32
+
+- [retro-go](https://github.com/ducalex/retro-go) — ESP32 多系统模拟固件（NES/GB/GBC/SMS/GG/MD/MSX/PCE 等，支持 ODROID-GO 等多种设备）。
+- [ESP32-NESEMU](https://github.com/espressif/esp32-nesemu) — Espressif 官方的 ESP32 NES 概念验证模拟器。
+- [Anemoia-ESP32](https://github.com/Shim06/Anemoia-ESP32) — 面向 ESP32 的高性能 NES 模拟器。
+- [Esp32-S3-nes-emulator](https://github.com/derdacavga/Esp32-S3-nes-emulator-by-DSN) — 面向 ESP32-S3 的高性能 NES 手持模拟器。
+- [esp32-gameboy](https://github.com/lualiliu/esp32-gameboy) — 基于 Arduino 的 ESP32 Game Boy 模拟器。
+- [Espeon](https://github.com/Ryuzaki-MrL/Espeon) — 从零编写的 ESP32 Game Boy 模拟器，注重精度与性能。
+- [ESP-BOX-EMU](https://github.com/esp-cpp/esp-box-emu) — 将 ESP32-S3-BOX 变为复古游戏掌机的多系统模拟器（NES/GB/SMS/MD 等）。
+- [Galagino](https://github.com/harbaum/galagino) — ESP32 街机模拟器（Galaga/Pac-Man/Donkey Kong/Frogger 等经典街机）。
+
+#### STM32 / ODROID-GO
+
+- [retro-go-stm32](https://github.com/bzhxx/retro-go-stm32) — 面向 ODROID-GO (STM32) 的复古模拟框架（NES/GB/GBC/SMS/GG/MD 等）。
+
+#### RP2040 / RP2350 (Raspberry Pi Pico)
+
+- [pico-infonesPlus](https://github.com/fhoedemakers/pico-infonesPlus) — 面向 RP2040/RP2350 的 NES 模拟器（HDMI 输出 + SD 卡）。
+- [pico-peanutGB](https://github.com/fhoedemakers/pico-peanutGB) — 面向 RP2040/RP2350 的 Game Boy/Game Boy Color 模拟器。
+- [Pico-GB](https://github.com/YouMakeTech/Pico-GB) — 基于 RP2040 的 3D 打印 Game Boy (DMG) 手持模拟器。
+- [PocketPico](https://github.com/harbaum/PocketPico) — 基于 RP2040 自定义 PCB 的 Game Boy 模拟器。
+- [pico-smsplus](https://github.com/fhoedemakers/pico-smsplus) — 面向 RP2040/RP2350 的 Sega Master System & Game Gear 模拟器。
+- [frank-snes](https://github.com/rh1tech/frank-snes) — 面向 RP2350 (Pico 2) 的 SNES 模拟器（HDMI 输出 + SD 卡）。
+- [frank-genesis](https://github.com/rh1tech/frank-genesis) — 面向 RP2350 (Pico 2) 的 Sega Genesis / Mega Drive 模拟器。
+- [pico-megadrive](https://github.com/xrip/pico-megadrive) — 基于 Gwenesis 引擎的 RP2040 Sega Mega Drive 模拟器。
+- [pico-pcePlus](https://github.com/fhoedemakers/pico-pcePlus) — 面向 RP2350 的 PC Engine / TurboGrafx-16 模拟器。
+- [frank-msx](https://github.com/rh1tech/frank-msx) — 面向 RP2350 (Pico 2) 的 MSX / MSX2 / MSX2+ 模拟器。
+- [frank-c64](https://github.com/rh1tech/frank-c64) — 面向 RP2350 (Pico 2) 的 Commodore 64 模拟器。
+- [frank-386](https://github.com/rh1tech/frank-386) — 面向 RP2350 (Pico 2) 的 i386 PC 模拟器。
+- [pico-286](https://github.com/xrip/pico-286) — 面向 RP2040/RP2350 的 286 PC 模拟器。
+- [pico-xt](https://github.com/xrip/pico-xt) — 面向 RP2040 的 PC XT (8086/8088) 模拟器。
+- [FRANK](https://github.com/rh1tech/frank) — 基于 RP2350 的硬件模拟平台（可切换多种固件：NES/SNES/Genesis/MSX/C64 等）。
 
 ## 前端 Frontends
 
@@ -465,6 +560,7 @@
 面向具体品类的游戏引擎与可视化制作工具。
 
 - [Solarus](https://gitlab.com/solarus-games/solarus) — 塞尔达风格 ARPG 游戏引擎。
+- [OpenBOR](https://github.com/DCurrent/openbor) — 2D 横版格斗 / 清版（beat 'em up）游戏引擎。
 - [GDevelop](https://github.com/4ian/GDevelop) — 无代码 / 低代码 2D 游戏引擎。
 - [GB Studio](https://github.com/chrismaltby/gb-studio) — 可视化 Game Boy 游戏制作工具。
 - [Adventure Game Studio](https://github.com/adventuregamestudio/ags) — 经典点击式冒险游戏引擎。
@@ -513,6 +609,7 @@
 - [PSn00bSDK](https://github.com/Lameguy64/PSn00bSDK) — PlayStation 的开源 SDK。
 - [KallistiOS](https://github.com/KallistiOS/KallistiOS) — Dreamcast 的开源开发用操作系统 / SDK。
 - [DreamSDK](https://github.com/dreamsdk/dreamsdk) — 基于 KallistiOS 的 Dreamcast 开发环境。
+- [citro3d](https://github.com/devkitPro/citro3d) — 任天堂 3DS homebrew 的图形库（基于 devkitPro）。
 
 ## 芯片音乐与音频 Chiptune & Audio
 
@@ -554,7 +651,6 @@ ROM 管理、补丁、成就与联机等实用工具。
 - [muOS](https://muos.dev) — 面向掌机的极简复古游戏系统。
 - [RetroDECK](https://github.com/RetroDECK/RetroDECK) — Steam Deck 等平台的一体化复古游戏方案（Flatpak）。
 - [EmuDeck](https://github.com/dragoonDorise/EmuDeck) — Steam Deck 等平台的模拟器一键配置工具。
-- [UnofficialOS](https://github.com/Unofficial-OS/distribution) — 面向多种掌机的复古游戏发行版。
 - [OnionOS](https://github.com/OnionUI/Onion) — Miyoo Mini 掌机的开源定制固件。
 - [spruceOS](https://github.com/spruceUI/spruceOS) — Miyoo A30 等掌机的开源定制固件。
 - [MinUI](https://github.com/shauninman/MinUI) — 极简主义的掌机启动器/系统。
@@ -578,6 +674,9 @@ ROM 管理、补丁、成就与联机等实用工具。
 - [MoltenVK](https://github.com/KhronosGroup/MoltenVK) — Vulkan 转 Apple Metal。
 - [gl4es](https://github.com/ptitSeb/gl4es) — OpenGL 转 OpenGL ES。
 - [vitaGL](https://github.com/Rinnegatamante/vitaGL) — 在 PS Vita 上实现 OpenGL（转为 GXM 图形 API），常用于移植游戏。
+- [pvr_psp2](https://github.com/GrapheneCt/pvr_psp2) — PS Vita 的 PowerVR GPU 用户态驱动（vitaGL 的底层）。
+- [ANGLE](https://github.com/google/angle) — 将 OpenGL ES 转为 Direct3D / Vulkan / Metal / 桌面 OpenGL。
+- [SwiftShader](https://github.com/google/swiftshader) — 纯软件（CPU）实现的 Vulkan / OpenGL ES 渲染器。
 - [vkd3d](https://gitlab.winehq.org/wine/vkd3d) — Direct3D 12 转 Vulkan（WineHQ 官方）。
 - [SoftGPU](https://github.com/JHRobotics/softgpu) — 为虚拟机中的 Windows 9x 提供 3D 加速 GPU 驱动（Direct3D/OpenGL/Glide）。
 - [vmdisp9x](https://github.com/JHRobotics/vmdisp9x) — 虚拟机中的 Windows 9x 显示驱动（SoftGPU 的底层组件）。
@@ -609,14 +708,64 @@ ROM 管理、补丁、成就与联机等实用工具。
 
 ## 开源复古硬件 Retro Hardware & DIY
 
-面向复古主机/街机的开源硬件与固件：卡带备份、音源、扫描转换、手柄适配等。
+面向复古主机/街机的开源硬件与固件：音源、视频转换、卡带工具、卡带/存储卡模拟、手柄适配等。
 
-- [Open Source Cartridge Reader](https://github.com/sanni/cartreader) — 开源卡带备份 / 读写器。
+### 音源与视频 Sound & Video
+
 - [mt32-pi](https://github.com/dwhinham/mt32-pi) — 树莓派上的 Roland MT-32 / SoundFont MIDI 音源。
 - [PicoGUS](https://github.com/polpo/picogus) — 用树莓派 Pico 模拟 ISA 声卡（Gravis UltraSound 等）。
+- [retro-sound](https://github.com/xrip/retro-sound) — 用 RP2040 驱动经典 FM 音源芯片（SAA1099/YM2413/SN76489/YM3812/YMF262 等）。
 - [OSSC](https://github.com/marqs85/ossc) — 开源扫描转换器（复古主机模拟信号转 HDMI）。
-- [BlueRetro](https://github.com/darthcloud/BlueRetro) — 复古主机的蓝牙手柄适配器固件。
-- [GP2040-CE](https://github.com/OpenStickCommunity/GP2040-CE) — 开源街机摇杆 / 手柄固件。
+- [RGBtoHDMI](https://github.com/hoglet67/RGBtoHDMI) — 复古计算机 RGB 视频转 HDMI 升频器。
+- [SNES RGB Bypass Amp](https://github.com/TzorriMahm/SNES_RGB_Bypass_Amp) — SNES 视频旁路放大改造板（THS7374）。
+- [GBSC](https://github.com/RetroScaler/GBSC) — 开源复古主机视频转换器（支持 RGBS/Component/VGA 输入，近乎零延迟）。
+
+### 卡带工具 Cartridge Tools
+
+- [Open Source Cartridge Reader](https://github.com/sanni/cartreader) — 开源卡带备份 / 读写器。
+- [FlashGBX](https://github.com/lesserkuma/FlashGBX) — Game Boy / GBA 卡带读写软件（支持 GBxCart RW 等硬件）。
+- [GBxProgrammer](https://github.com/zephray/GBxProgrammer) — Game Boy 卡带编程器（支持 MBC1-5 读取与烧录）。
+- [Arduino-GBx-Reader-Writer](https://github.com/DMRodrigues/Arduino-GBx-Reader-Writer) — 基于 Arduino 的 Game Boy 卡带读写器。
+- [GameBoy-Flash-Carts](https://github.com/bbbbbr/GameBoy-Flash-Carts) — 市面在售的 Game Boy 烧录卡列表。
+
+### 卡带 / 存储卡模拟 Cartridge & Memory Card Emulation
+
+用单片机/嵌入式硬件模拟真实主机的卡带或存储卡。
+
+- [PicoCart64](https://github.com/kbeckmann/PicoCart64) — 基于 RP2040 的 N64 烧录卡（flash cart）。
+- [Dreamdrive64](https://github.com/khill25/Dreamdrive64) — 基于 RP2040 的 N64 烧录卡，支持 64MB ROM 与 EEPROM 存档。
+- [N64FlashcartMenu](https://github.com/Polprzewodnikowy/N64FlashcartMenu) — 通用 N64 烧录卡菜单（支持多种硬件）。
+- [rp2040-gameboy-cartridge-firmware](https://github.com/shilga/rp2040-gameboy-cartridge-firmware) — 用 RP2040 实现的 Game Boy 烧录卡固件。
+- [DBGC](https://github.com/deltabeard/DBGC) — 开源 Game Boy 卡带（支持 No MBC/MBC1/MBC3 + RTC + FRAM）。
+- [NekoCart-GB](https://github.com/zephray/NekoCart-GB) — 基于 Xilinx CPLD 的开源 Game Boy 烧录卡。
+- [GB-Flash-Cart-32K](https://github.com/LovelyA72/GB-Flash-Cart-32K) — 易制作的开源 32KB Game Boy 烧录卡。
+- [snes-flash](https://github.com/aiju/snes-flash) — 开源 SNES MicroSD 烧录卡（VHDL + 汇编）。
+- [open-ed](https://github.com/krikzz/open-ed) — 开源 Genesis/MegaDrive 烧录卡（Everdrive 作者出品）。
+- [picoCart_NES](https://github.com/nikita600/picoCart_NES) — 用 RP2040 模拟 NES 卡带。
+- [PicoMemcard](https://github.com/dangiu/PicoMemcard) — 用 RP2040 模拟 PlayStation 记忆卡（USB 传输存档）。
+- [OpenMC](https://github.com/johnbaumann/OpenMC) — 用 ESP32 模拟 PSX 记忆卡（Wi-Fi 上传存档）。
+- [PicoBoot](https://github.com/webhdx/PicoBoot) — 基于 RP2040 的 GameCube IPL 替换 modchip。
+- [PicoBoot-BT](https://github.com/HandHeldLegend/PicoBoot-BT) — PicoBoot 蓝牙增强版（GameCube IPL modchip + 蓝牙手柄）。
+- [PicoLoader](https://github.com/makeo/PicoLoader) — 基于 RP2040 的 GameCube ODE 风格 modchip。
+- [Dreamdrive](https://github.com/khill25/Dreamdrive) — 开源 Dreamcast 光盘驱动器模拟器（ODE）。
+
+### 手柄适配器与固件 Controller Adapters & Firmware
+
+实现复古手柄与现代设备、或现代手柄与复古主机之间的互转。
+
+- [BlueRetro](https://github.com/darthcloud/BlueRetro) — ESP32 复古主机蓝牙手柄适配器固件。
+- [GP2040-CE](https://github.com/OpenStickCommunity/GP2040-CE) — RP2040 开源街机摇杆 / 手柄固件。
+- [DaemonBite Retro Controllers USB](https://github.com/MickGyver/DaemonBite-Retro-Controllers-USB) — Arduino 复古手柄转 USB 适配器（SNES/NES/MD/SMS 等）。
+- [Retro-Controllers-USB-MiSTer](https://github.com/Mister-devel/Retro-Controllers-USB-Mister) — DaemonBite 的 MiSTer FPGA 分支版本。
+- [4dapter](https://github.com/timville85/4dapter) — 基于 DaemonBite 的 4 合 1 手柄适配器 PCB（NES/SNES/N64/MD）。
+- [raspberry-pico-retro-controller-adapters](https://github.com/ryansalerno/raspberry-pico-retro-controller-adapters) — 基于 Pico 的复古手柄转 USB 适配器。
+- [retro-pico-switch](https://github.com/DavidPagels/retro-pico-switch) — Pico 适配器：N64/GameCube 手柄控制 Switch。
+- [OGX-Mini](https://github.com/wiredopposite/OGX-Mini) — RP2040/RP2350 多平台手柄模拟固件（Xbox/PS3/Switch/DInput 等）。
+- [OpenRetroPad](https://github.com/OpenRetroPad/OpenRetroPad) — 多输入多输出手柄适配器（SNES/NES/MD/Saturn/PS 等）。
+- [DreamPicoPort](https://github.com/OrangeFox86/DreamPicoPort) — RP2040 Dreamcast 手柄转 USB 适配器。
+- [usb2pce](https://github.com/cualquiercosa327/usb2pce) — 开源 USB 手柄转 PC Engine 控制器适配器。
+- [PicoGamepadConverter](https://github.com/Loc15/PicoGamepadConverter) — RP2040/RP2350 手柄协议转换器（USB/蓝牙/复古手柄互转）。
+- [Joypad OS](https://github.com/joypad-ai/joypad-os) — 通用手柄固件平台（复古主机与现代控制器互转，支持 GameCube/Dreamcast 等）。
 
 ## 相关列表与资源 Related Lists & Resources
 

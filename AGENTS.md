@@ -23,8 +23,8 @@
 
 以 `README.md` 实际章节为准，分类会演进。当前的一级分类：
 
-1. **模拟器 Emulators** — 按厂商归类，再按机型分二级（任天堂/索尼/世嘉/微软/街机/复古计算机；跨平台放「多系统 / 通用」）。软件模拟归此类。
-2. **FPGA 硬件模拟 FPGA Emulation & Cores** — 用 FPGA 在硬件层面重建主机/街机的开源平台与核心（MiSTer、MiST、JT cores 等）。与软件「模拟器」区分。
+1. **模拟器 Emulators** — 按厂商/平台归类。二级：多系统/通用、任天堂、索尼、世嘉、微软、其他与冷门主机、街机、复古计算机、掌机与主机模拟器。软件模拟归此类。
+2. **硬件实现 Hardware Implementations** — 在专用硬件平台（FPGA / 单片机 / 嵌入式 SoC）上实现复古游戏模拟。二级：FPGA 硬件模拟、单片机与嵌入式模拟器。
 3. **前端 Frontends** — 管理/启动游戏与模拟器的界面、启动器、刮削工具。
 4. **老游戏开源复刻 Game Remakes & Reimplementations** — 可游玩的引擎重实现/源码移植，按**玩法**分二级（RTS / 回合制策略·战棋 / 模拟经营 / RPG / FPS / 射击 / 动作·平台 / 开放世界 / 太空·探索 / 生存·Roguelike）。
 5. **反编译与静态重编译 Decompilation & Recompilation** — 反编译工程（还原源码）、静态重编译工具、重编译产出的游戏。二级：静态重编译工具 / 重编译游戏 / 反编译工程。
@@ -37,7 +37,7 @@
 12. **复古游戏发行版 Retro Gaming Distributions** — 面向复古游戏的操作系统/固件。
 13. **兼容层与转译 Compatibility & Translation Layers** — CPU 指令转译 / 图形 API 转译 / 系统兼容层。
 14. **CRT 着色器与滤镜 Shaders & Filters** — 模拟 CRT / 扫描线 / NTSC 等画面效果的着色器（slang-shaders、Mega Bezel、ReShade 等）。
-15. **开源复古硬件 Retro Hardware & DIY** — 面向复古主机/街机的开源硬件与固件（卡带备份、音源、扫描转换、手柄适配等；sanni/cartreader、mt32-pi、OSSC、BlueRetro 等）。FPGA 平台归第 2 类，不放这里。
+15. **开源复古硬件 Retro Hardware & DIY** — 面向复古主机/街机的开源硬件与固件。二级：音源与视频（mt32-pi、PicoGUS、OSSC）、卡带工具（sanni/cartreader、FlashGBX）、卡带/存储卡模拟（PicoCart64、PicoMemcard、PicoBoot 等）、手柄适配器与固件（BlueRetro、GP2040-CE、DaemonBite 等）。FPGA 平台归第 2 类，不放这里。
 16. **相关列表与资源 Related Lists & Resources** — 其他同类精选列表，仅链接，**不合并其内容**。
 
 ### 归类消歧
