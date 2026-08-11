@@ -430,6 +430,8 @@
 - [xoreos](https://github.com/xoreos/xoreos) — BioWare Aurora 引擎系列游戏重实现。
 - [Nuvie](https://github.com/nuvie/nuvie) — 创世纪 6（Ultima VI）引擎重实现。
 - [OpenTESArena](https://github.com/afritz1/OpenTESArena) — 上古卷轴：竞技场（Arena）开源重实现。
+- [Fallout1-ce](https://github.com/alexbatalov/fallout1-ce) — 辐射（Fallout）源码移植（社区版，支持多平台）。
+- [Fallout2-ce](https://github.com/alexbatalov/fallout2-ce) — 辐射 2（Fallout 2）源码移植（社区版，支持多平台）。
 
 ### 第一人称射击 FPS
 
