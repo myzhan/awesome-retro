@@ -156,7 +156,7 @@
 
 #### Genesis / Mega Drive / Master System
 
-- [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX) — Genesis / Mega Drive / Master System 模拟器。
+- [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX) — 世嘉 8/16 位模拟器（支持 MD/CD/SMS/GG/SG-1000）。
 - [BlastEm](https://www.retrodev.com/blastem/) — 高精度 Genesis / Mega Drive 模拟器。
 - [PicoDrive](https://github.com/notaz/picodrive) — 面向 ARM 的轻量 Genesis / Sega CD / 32X 模拟器。
 
@@ -244,7 +244,6 @@
 - [FCEUX TX](https://github.com/saulfabregwiivc/FCEUXTX) — FCE Ultra GX 的增强分支，更多功能与修正。
 - [Snes9x GX](https://github.com/dborth/snes9xgx) — 面向 Wii/GameCube 的 SNES 模拟器移植。
 - [Visual Boy Advance GX](https://github.com/dborth/vbagx) — 面向 Wii/GameCube 的 GBA/GB/GBC 模拟器移植。
-- [Genesis Plus GX](https://github.com/ekeeke/genesis-plus-gx) — 世嘉 8/16 位模拟器增强移植（Wii/GameCube 起源，支持 MD/CD/SMS/GG）。
 
 #### Wii U
 
