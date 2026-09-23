@@ -148,6 +148,10 @@
 - [shadPS4](https://github.com/shadps4-emu/shadPS4) — PS4 模拟器。
 - [fpPS4](https://github.com/red-prig/fpPS4) — 用 Pascal 编写的 PS4 模拟器。
 
+#### PlayStation 5
+
+- [KytyPS5](https://github.com/KytyPS5/KytyPS5) — PS5 模拟器（支持 Windows / Linux / macOS）。
+
 #### PS Vita
 
 - [Vita3K](https://github.com/Vita3K/Vita3K) — PS Vita 模拟器。
